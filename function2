@@ -1,0 +1,14 @@
+#!/bin/sh
+#Define funtion
+
+number_one () {
+	echo "alpha online ... over"
+	number_2
+}
+
+number_2 () {
+	echo "hei there"
+}
+
+number_one
+

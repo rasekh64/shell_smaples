@@ -1,0 +1,707 @@
+    1  sudo apt-get install build-essential gcc make perl dkms
+    2  sudo dpkg --configure -a
+    3  sudo apt-get install build-essential gcc make perl dkms
+    4  exit
+    5  reboot
+    6  sudo apt-get install virtualbox-guest-additions-iso 
+    7  sudo apt-get install git
+    8  git config --global user.name "Toby Goethals"
+    9  git config --global user.email "toby.goethals@roxell.com"
+   10  ssh-keygen -t rsa -b 4096 -C "toby.goethals@roxell.com"
+   11  eval "$(ssh-agent -s)"
+   12  ssh-add -K /Users
+   13  ssh-add -K /home/test/.ssh/id_rsa
+   14  ssh-add -k /home/test/.ssh/id_rsa
+   15  cat ~/.ssh/id_rsa.pub | xclip -sel clip
+   16  sudo apt install xclip 
+   17  cat ~/.ssh/id_rsa.pub | xclip -sel clip
+   18  exit
+   19  ls
+   20  cd Documents/iQon\ Repo/
+   21  exit
+   22  cd Documents/iQon_Repo/
+   23  git clone git@bitbucket.org:roxell/meta-helium.git
+   24  git clone git@bitbucket.org:roxell/controlline.git
+   25  git clone git@bitbucket.org:roxell/api-gateway.git
+   26  git clone git@bitbucket.org:roxell/controlline-gui.git
+   27  git clone git@bitbucket.org:roxell/controlline-api.git
+   28  git clone git@bitbucket.org:roxell/controlline-websocket.git
+   29  git clone git@bitbucket.org:roxell/iqon-system.git
+   30  git clone git@bitbucket.org:roxell/libhelium.git
+   31  git clone git@bitbucket.org:roxell/pyhelium.git
+   32  git clone git@bitbucket.org:roxell/sampler.git
+   33  git clone git@bitbucket.org:roxell/Controlline-Test.git
+   34  clear
+   35  cd meta-helium/
+   36  git fetch
+   37  git checkout sprint-106.a 
+   38  cd ../controlline
+   39  git fetch
+   40  git checkout sprint-106.a 
+   41  cd ../controlline-gui/
+   42  git fetch
+   43  git checkout sprint-106.a 
+   44  cd ../controlline-websocket/
+   45  git fetch
+   46  git checkout sprint-101.a 
+   47  cd ../iqon-system/
+   48  git fetch
+   49  git checkout sprint-102.a 
+   50  cd ../libhelium/
+   51  git fetch
+   52  git checkout sprint-106.a 
+   53  cd ../controlline-api/
+   54  git fetch
+   55  git checkout sprint-102.a.1 
+   56  cd ../py
+   57  cd ../pyhelium/
+   58  git fetch
+   59  git checkout sprint-106.a 
+   60  cd ../api-gateway/
+   61  git fetch
+   62  git checkout sprint-106.a 
+   63  cd ../sampler/
+   64  git fetch
+   65  git checkout sprint-106.a 
+   66  clear
+   67  sudo apt update
+   68  sudo apt upgrade
+   69  ps aux | grep -i apt
+   70  sudo apt upgrade
+   71  sudo apt dist-upgrade
+   72  sudo apt autoremove 
+   73  cat /etc/issue
+   74  sudo apt install update-manager-core 
+   75  sudo do-release-upgrade 
+   76  sudo nano /etc/update-manager/release-upgrades
+   77  sudo do-release-upgrade -d
+   78  ls -ll
+   79  ./guf-glibc-x86_64-iqon-application-image-cortexa9hf-neon-toolchain-rocko-7.0-0.sh
+   80  sudo ./guf-glibc-x86_64-iqon-application-image-cortexa9hf-neon-toolchain-rocko-7.0-0.sh
+   81  chmod a+x guf-glibc-x86_64-iqon-application-image-cortexa9hf-neon-toolchain-rocko-7.0-0.sh 
+   82  chmod a+x guf-glibc-x86_64-iqon-application-image-cortexa9hf-vfp-neon-toolchain-jethro-10.0-r7885-0.sh 
+   83  sudo ./guf-glibc-x86_64-iqon-application-image-cortexa9hf-neon-toolchain-rocko-7.0-0.sh 
+   84  sudo ./guf-glibc-x86_64-iqon-application-image-cortexa9hf-vfp-neon-toolchain-jethro-10.0-r7885-0.sh 
+   85  ./guf-glibc-x86_64-iqon-application-image-cortexa9hf-vfp-neon-toolchain-jethro-10.0-r7885-0.sh 
+   86  cd /opt/guf/
+   87  ls -ll
+   88  rm -rf GUF-Yocto-jethro-10.0-r7885-0-sdk/
+   89  sudo rm -rf GUF-Yocto-jethro-10.0-r7885-0-sdk/
+   90  ls -ll
+   91  clear
+   92  ls -ll
+   93  cd Downloads/
+   94  sudo ./guf-glibc-x86_64-iqon-application-image-cortexa9hf-vfp-neon-toolchain-jethro-10.0-r7885-0.sh 
+   95  cd /opt/guf/GUF-Yocto-jethro-10.0-r7885-0-sdk/
+   96  ls -ll
+   97  ./relocate_sdk.sh 
+   98  python3 -v
+   99  python3 --version
+  100  which env
+  101  cd /usr/bin/env
+  102  env python3
+  103  nano relocate_sdk.sh 
+  104  sudo nano relocate_sdk.sh 
+  105  sudo nano relocate_sdk.py
+  106  apt search python
+  107  cat /etc/issue
+  108  sudo apt install python 2
+  109  sudo apt install python2
+  110  env python
+  111  python2 -V
+  112  sudo ./relocate_sdk.sh 
+  113  sudo apt install python
+  114  env python
+  115  sudo ./relocate_sdk.sh 
+  116  cd ..
+  117  cd controlline
+  118  git status
+  119  git fetch
+  120  git checkout master
+  121  git checkout sprint-107.a
+  122  cd ../meta-helium/
+  123  git fetch
+  124  git checkout sprint-107.a
+  125  cd ../controlline-gui/
+  126  git fetch
+  127  git checkout sprint-107.a
+  128  cd ../controlline-websocket/
+  129  git fetch
+  130  git checkout sprint-101.a
+  131  cd ../iqon-system
+  132  git fetch
+  133  git checkout sprint-102.a
+  134  cd ../controlline-a
+  135  cd ../controlline-api/
+  136  git fetch
+  137  git checkout sprint-102.a.1 
+  138  cd ../libhelium/
+  139  git fetch
+  140  cd ../pyhelium/
+  141  git fetch
+  142  cd ../libhelium/
+  143  git checkout sprint-106.a 
+  144  cd ../pyhelium/
+  145  git checkout sprint-106.a 
+  146  cd ../api-gateway/
+  147  git fetch
+  148  git checkout sprint-106.a 
+  149  cd ../sampler/
+  150  git fetch
+  151  git checkout sprint-106.a 
+  152  cd ../controlline/scripts/
+  153  sudo nano build-all.sh 
+  154  clear
+  155  sudo -s
+  156  exit
+  157  nano .bashrc 
+  158  cd ../controlline/scripts/
+  159  ./build-all.sh test
+  160  ls -ll
+  161  root@192.168.1.1
+  162  ssh root@192.168.1.1
+  163  cd ../controlline/scripts/
+  164  ./build-all.sh test2
+  165  exit
+  166  nano .bashrc
+  167  ls -ll
+  168  cd /home/test/bin/
+  169  ls -ll
+  170  nano cpsan 
+  171  nano san
+  172  nano chkxml 
+  173  nano cl-test 
+  174  nano fetchall 
+  175  nan
+  176  nano ~/.bash_aliases
+  177  nano ~/.bashrc
+  178  nano ~/.bash_aliases
+  179  san$
+  180  san
+  181  cpsan
+  182  nano ~/.bash_aliases
+  183  nano ~/.bash_profile
+  184  san
+  185  nano ~/.bash_profile
+  186  nano ~/.bashrc
+  187  san
+  188  nano ~/.bash_profile
+  189  echo $PATH
+  190  nano ~/.bash_profile
+  191  san
+  192  cd ~/
+  193  ls -all
+  194  rm -rf .bash_profile 
+  195  echo $PATH
+  196  cd /home/test/bin/
+  197  ls -mm
+  198  ls -ll
+  199  cp cpsan /usr/local/bin/
+  200  sudo cp cpsan /usr/local/bin/
+  201  sudo cp san /usr/local/bin/
+  202  sudo cp fetchall /usr/local/bin/
+  203  san$
+  204  san
+  205  cd /usr/local/bin/
+  206  ls -ll
+  207  sudo chmod 755 san 
+  208  san
+  209  ls -ll
+  210  fetchall 
+  211  cd ../controlline
+  212  git fetch --progress
+  213  git fetch -v
+  214  cd /usr/local/
+  215  ls -ll
+  216  cd ~/Downloads/
+  217  ls -ll
+  218  cd Kopie\ van\ bin/
+  219  ls -ll
+  220  cd /usr/local/bin
+  221  ls -ll
+  222  ln -sf ~/Documents/iQon_Repo/Controlline-Test/libraries/scripts_bin/runtests runtests
+  223  sudo ln -sf ~/Documents/iQon_Repo/Controlline-Test/libraries/scripts_bin/runtests runtests
+  224  ls -ll
+  225  runtests suites/01_Bin_to_weigher/1bin_to_weigher_single_batch_MBW.txt 
+  226  sudo apt install libreadline-dev libxml2-dev libxslt1-dev zlib1g-dev 
+  227  sudo apt install can-utils 
+  228  sudo apt install robotframework
+  229  sudo pip install robotframework
+  230  sudo pip install python-pip
+  231  sudo apt install python-pip
+  232  runtests suites/01_Bin_to_weigher/1bin_to_weigher_single_batch_MBW.txt 
+  233  sudo apt-get install python-pip
+  234  sudo apt install python3-pip
+  235  sudo apt install python2-pip
+  236  sudo apt install python-p
+  237  sudo apt install python-pip
+  238  sudo apt install python3-pip
+  239  sudo pip install robotframework
+  240  pip
+  241  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+  242  sudo apt install curl
+  243  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+  244  ls -ll
+  245  python get-pip.py 
+  246  pip install robotframework
+  247  pip -v
+  248  python3 get-pip.py 
+  249  pip
+  250  sudo
+  251  sudo su
+  252  cd ~/
+  253  ls -all
+  254  sudo nano .bashrc 
+  255  runtests suites/01_Bin_to_weigher/1bin_to_weigher_single_batch_MBW.txt 
+  256  pip
+  257  pip3 install robotframework
+  258  pybot --version
+  259  echo $PATH
+  260  robot --version
+  261  runtests suites/01_Bin_to_weigher/1bin_to_weigher_single_batch_MBW.txt 
+  262  cd layouts/
+  263  ls -ll
+  264  ln -sf ../../controlline-api/equote-api/iqon_layout_validator/iqon_layout_validator/data/controlline.xsd controlline.xsd 
+  265  ls -ll
+  266  runtests suites/01_Bin_to_weigher/1bin_to_weigher_single_batch_MBW.txt 
+  267  san
+  268  cd ../controlline/scripts/
+  269  cd ..
+  270  git status
+  271  fetchall
+  272  git checkout sprint-107.a.1
+  273  git checkout sprint-107.a
+  274  cd ../meta-helium/
+  275  git checkout sprint-107.a.1
+  276  git status
+  277  cd ../controlline-gui/
+  278  git status
+  279  git checkout sprint-107.a.1 
+  280  cd ../controlline-websocket/
+  281  git status
+  282  cd ../iqon-system/
+  283  git status
+  284  cd ../libhelium/
+  285  git status
+  286  cd ../controlline-api/
+  287  git status
+  288  cd ../pyhelium/
+  289  git status
+  290  cd ../api-gateway/
+  291  git status
+  292  cd ../sampler/
+  293  git status
+  294  cd ../controlline/scripts/
+  295  ./build-all.sh testmultbuf
+  296  ls -ll
+  297  cpsan testmultbuf.tgz 
+  298  san
+  299  clear
+  300  cd ../../Controlline-Test/
+  301  cd layouts/99_tests/
+  302  ls -ll
+  303  cpsan VRIC_Multiple_Buffers.xml 
+  304  san
+  305  exit
+  306  sudo snap install notepadqq
+  307  sudo snap remove notepadqq
+  308  san
+  309  exit
+  310  san
+  311  cd /usr/local/bin/
+  312  ls -ll
+  313  chmod help
+  314  chmod --help
+  315  chmod -R 755 /usr/local/bin
+  316  sudo chmod -R 755 /usr/local/bin
+  317  ls -ll
+  318  sudo chmod -R 777 /usr/local/bin
+  319  ls -ll
+  320  clear
+  321  fetchall 
+  322  nano fetchall
+  323  fetchall 
+  324  cd ../api-gateway/
+  325  git fetch
+  326  git status
+  327  san
+  328  exit
+  329  cd ..
+  330  ls -ll
+  331  fetchall
+  332  cd controlline/scripts/
+  333  ./build-all.sh test2020
+  334  ls -ll
+  335  cpsan test2020.tgz 
+  336  san
+  337  cd ../api-gateway/
+  338  git fetch
+  339  git status
+  340  cd ../controlline
+  341  git fetch
+  342  exit
+  343  cd ..
+  344  cd api-gateway/
+  345  git fetch
+  346  git remote -v
+  347  ssh git@bitbucket.org
+  348  ssh -v git@bitbucket.org
+  349  fetchall
+  350  exit
+  351  pwd
+  352  ls
+  353  cd ::
+  354  clear
+  355  ls
+  356  ls )ll
+  357  clear
+  358  cd ..
+  359  cd 
+  360  pwd
+  361  cd 
+  362  pwd
+  363  cd ..
+  364  ls
+  365  pwd
+  366  clear
+  367  sudo apt update
+  368  sudo apt -y upgrade
+  369  python3 -V
+  370  sudo apt install -y python3-pip
+  371  ls
+  372  pip3 install numpy
+  373  sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
+  374  sudo apt install -y python3-venv
+  375  mkdir environments
+  376  mkdir s\
+  377  clear
+  378  pwd
+  379  ls
+  380  cd test/
+  381  mkdir se
+  382  ls
+  383  mkdir enviroments
+  384  cd enviroments/\
+  385  pwd
+  386  python3 -m venv my_env
+  387  ls my_env
+  388  source my_env/bin/activate
+  389  nano hello.py
+  390  ls
+  391  python hello.py
+  392  mv hello.y helo.py
+  393  python hello.py
+  394  python helo.py
+  395  clear
+  396  logout
+  397  exit
+  398  cd ..
+  399  ls
+  400  cd 
+  401  pwd
+  402  ls
+  403  rm -r se/
+  404  ls
+  405  cd enviroments/
+  406  cleaer
+  407  clear
+  408  cd 
+  409  ls\
+  410  ls
+  411  pwd
+  412  ls
+  413  clear
+  414  ls
+  415  vi test.sh 
+  416  vim test
+  417  vim test.sh 
+  418  vi test.sh 
+  419  ls
+  420  cd ~
+  421  pwd
+  422  ls
+  423  cd enviroments/
+  424  ls
+  425  python helo.py 
+  426  clear
+  427  ls
+  428  rm helo.py hello.py 
+  429  mv helo.py hello.py 
+  430  ls
+  431  nano hello.py
+  432  ls
+  433  python hello.py 
+  434  clear
+  435  cd 
+  436  pwd
+  437  ls
+  438  cd Documents/
+  439  ls
+  440  cd iQon_Repo/
+  441  ls
+  442  cd d
+  443  cd controlline
+  444  ls
+  445  vi state_machine.c 
+  446  vi portion.h 
+  447  cd doc/
+  448  ls
+  449  vi Makefile
+  450  cd Makefile
+  451  vi Makefile
+  452  ~$
+  453  clear
+  454  cd
+  455  pwd
+  456  ip
+  457  ip --h
+  458  ls
+  459  cd Documents/
+  460  ls
+  461  cd iQon_Repo/
+  462  ls
+  463  cd controlline-api/
+  464  ls
+  465  ls iqon-api
+  466  ls
+  467  cd iqon-api/
+  468  ;s
+  469  pwd
+  470  ;s
+  471  ls
+  472  ls -l
+  473  ls -a
+  474  ls 
+  475  clear
+  476  ls -la
+  477  ls -ls
+  478  ls -ll
+  479  ls -a
+  480  ls -la /home
+  481  env
+  482  clea
+  483  clear
+  484  pwd
+  485  PATH=/home/test/Documents/iQon_Repo/Controlline-Test
+  486  echo $PATH
+  487  cd
+  488  pwd
+  489  cd $PATH
+  490  ls
+  491  pwd
+  492  ls
+  493  clear
+  494  pwd
+  495  ls
+  496  echo $PATH
+  497  pwd
+  498  PATH=/home/test/Documents/iQon_Repo/Controlline-Test
+  499  echo $PATH
+  500  ls
+  501  pwd
+  502  cd /home/test/Documents/iQon_Repo/Controlline-Test
+  503  ls
+  504  ls
+  505  mkdir ali
+  506  cd ali
+  507  ls
+  508  pwd
+  509  cd
+  510  pwd
+  511  ls
+  512  cd ali/
+  513  ls
+  514  vi vi edit.sh 
+  515  ls
+  516  nano edit.sh 
+  517  vi edit.sh 
+  518  ./edit.sh 
+  519  vi edit.sh 
+  520  ./edit.sh 
+  521  ls
+  522  cd ..
+  523  ls
+  524  cd controlline
+  525  ls
+  526  ls la
+  527  ;s
+  528  ls
+  529  ls -la
+  530  ls
+  531  cd -
+  532  cd --help
+  533  pwd
+  534  ls
+  535  cd -
+  536  pwd
+  537  cd
+  538  cd ali/
+  539  ls
+  540  cd -
+  541  ls
+  542  clear
+  543  taar --h
+  544  taar -h
+  545  tar --h
+  546  tar --help
+  547  clear
+  548  exit
+  549  ls
+  550  gedit test.sh 
+  551  cd /usr/local/bin
+  552  ls
+  553  vi cpsan 
+  554  vi fetchall 
+  555  vi runtests 
+  556  vi san
+  557  exit
+  558  cd
+  559  ls
+  560  cd ..
+  561  ls
+  562  cd bin
+  563  ls
+  564  pwd
+  565  cd ..
+  566  ls
+  567  pwd
+  568  cd usr
+  569  pwd
+  570  ls
+  571  bin
+  572  cd bin
+  573  pwd
+  574  ls
+  575  cd ..
+  576  ls
+  577  cd local/
+  578  ls
+  579  cd bin
+  580  ls
+  581  vi cpsan
+  582  clear
+  583  pwd
+  584  exit
+  585  ls
+  586  grep santaro
+  587  grep -h
+  588  grep --h
+  589  ls
+  590  echo 'ali'
+  591  echo "ali"
+  592  clear
+  593  pwd
+  594  ls
+  595  vi README.md 
+  596  $*
+  597  $0
+  598  $?
+  599  cd usr/local/bin
+  600  cd
+  601  cd ..
+  602  ls
+  603  cd usr/local/
+  604  ls
+  605  cd bin
+  606  ls
+  607  pwd
+  608  cd ~
+  609  pqs
+  610  pwd
+  611  ls
+  612  cd ..
+  613  ls
+  614  cd controlline
+  615  ls
+  616  cd scripts/
+  617  ls
+  618  vi build-all.sh 
+  619  vi graph.py 
+  620  vi json-api-test.py 
+  621  vi mem-track.sh 
+  622  vi test
+  623  vi test.sh 
+  624  exit
+  625  cd 
+  626  la
+  627  cd ali
+  628  pwd
+  629  /home/test/ali -x 
+  630  /home/test/ali --help
+  631  /home/test/ali -x $1
+  632  cd doc
+  633  cd docs/
+  634  ls
+  635  cd ..
+  636  ls
+  637  clear
+  638  ls
+  639  cd ..
+  640  pwd
+  641  ls
+  642  cd controlline
+  643  ls
+  644  vi can_socket.c
+  645  clear
+  646  cd
+  647  ls
+  648  vi argument_file.txt 
+  649  clear
+  650  ls
+  651  vi resource_root.txt 
+  652  vi runall_ALL 
+  653  clear
+  654  ls
+  655  cd reports/
+  656  ls
+  657  vi controlline-test-report.book 
+  658  cd sprint18/
+  659  ls
+  660  vi test-report_2016-02-16.md 
+  661  cd
+  662  ls
+  663  cd ali/
+  664  cd =
+  665  cd -
+  666  pwd
+  667  exit
+  668  cd
+  669  ls
+  670  pwd
+  671  ls
+  672  ps
+  673  ps -e
+  674  whoami
+  675  ps -u test
+  676  ~ --help
+  677  ~ -=h
+  678  cd -
+  679  pwd
+  680  cd ~
+  681  pwd
+  682  echo "$PATH"
+  683  locate control
+  684  cal
+  685  date
+  686  clear
+  687  cal
+  688  which cal
+  689  which python3
+  690  which python2
+  691  cd /usr/bin
+  692  ls 
+  693  ls -a
+  694  which python2
+  695  cd /usr/bin/python2
+  696  cd
+  697  cd /usr/bin/python2
+  698  cd /usr/bin
+  699  ls
+  700  vi python
+  701  ls -la
+  702  clear
+  703  history
+  704  cd
+  705  cd ali/
+  706  ls
+  707  history > history.log
